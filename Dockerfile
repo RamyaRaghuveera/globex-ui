@@ -1,5 +1,5 @@
 # First stage builds the application
-FROM registry.access.redhat.com/ubi8/nodejs-16:1 as builder
+FROM registry.access.redhat.com/ubi8/nodejs-16:latest as builder
 
 # Add dependencies
 COPY --chown=1001:1001 package*.json $HOME
